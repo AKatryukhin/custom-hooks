@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { UseDisclosureComponent } from './components/useDisclosureComponent';
+import { UseFullScreenComponent } from './components/useFullScreenComponent';
+import { UseIdleTimeOutComponent } from './components/useIdleTimeOutComponent';
+import { UseLocalStorageComponent } from './components/useLocalStorageComponent';
 
-function App() {
+  function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseDisclosureComponent />
+      <UseFullScreenComponent />
+      <UseIdleTimeOutComponent />
+      <UseLocalStorageComponent />
     </div>
   );
 }
